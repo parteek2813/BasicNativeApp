@@ -1,15 +1,23 @@
 import React from 'react';
-import {View, Text, StyleSheet, useColorScheme} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  useColorScheme,
+  SafeAreaView,
+  ScrollView,
+} from 'react-native';
+import FlatCards from './components/FlatCards';
 
 function AppPro(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <View style={styles.container}>
-      <Text style={isDarkMode ? styles.whiteText : styles.darkText}>
-        I am working!
-      </Text>
-    </View>
+    <SafeAreaView>
+      <ScrollView>
+        <FlatCards />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
