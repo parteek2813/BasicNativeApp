@@ -11,6 +11,7 @@ import FlatCards from './components/FlatCards';
 import ElevatedCards from './components/ElevatedCards';
 import FancyCards from './components/FancyCards';
 import ActionCards from './components/ActionCards';
+import ContactList from './components/ContactList';
 
 function AppPro(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -20,6 +21,7 @@ function AppPro(): JSX.Element {
         <FlatCards />
         <ElevatedCards />
         <FancyCards />
+        <ContactList />
         <ActionCards />
       </ScrollView>
     </SafeAreaView>
