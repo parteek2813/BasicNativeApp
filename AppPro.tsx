@@ -8,6 +8,8 @@ import {
   ScrollView,
 } from 'react-native';
 import FlatCards from './components/FlatCards';
+import ElevatedCards from './components/ElevatedCards';
+import FancyCards from './components/FancyCards';
 
 function AppPro(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -16,6 +18,9 @@ function AppPro(): JSX.Element {
     <SafeAreaView>
       <ScrollView>
         <FlatCards />
+        <ElevatedCards />
+        <FancyCards />
+        <FancyCards />
       </ScrollView>
     </SafeAreaView>
   );
